@@ -10,6 +10,31 @@
     <h2>Sorry! Your browser doesn't support Javascript</h2>
 </noscript>
 
+<div id="card-page">
+    <div class="card-page-container">
+        <canvas id="myCanvas" width="200" height="200" style="border:1px solid #000000;"></canvas>
+        <img id="AllyKingArthur" src="AllyKingArthur.gif" style="display:none" alt="Ally">
+        <img id="AllyKingPellinore" src="AllyKingPellinore.gif" style="display:none" alt="Ally">
+        <img id="AllyMerlin" src="AllyMerlin.gif" style="display:none" alt="Ally">
+        <script>
+
+        // function myCanvas() {
+        window.onload = function(){
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+
+            var img = document.getElementById("AllyKingArthur");
+            ctx.drawImage(img,10,10);
+            var img = document.getElementById("AllyKingPellinore");
+            ctx.drawImage(img,110,10);
+            var img = document.getElementById("AllyMerlin");
+            ctx.drawImage(img,210,10);
+        }
+
+        </script>
+    </div>
+</div>
+
 <div id="username-page">
     <div class="username-page-container">
         <h1 class="title">Type your username</h1>
